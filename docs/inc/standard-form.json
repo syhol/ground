@@ -1,0 +1,24 @@
+{
+    "type" : "form",
+    "id" : "gen-form",
+    "method" : "POST",
+    "action" : "generator.php",
+    "title" : "My Generated Form",
+    "fields" : [
+        {
+            "type" : "text",
+            "id" : "my-first-text",
+            "title" : "Name",
+            "placeholder" : "Name",
+            "rules" : [
+                ["required", "", "Please fill out this field"],
+                ["max-char", 20, "No More than 20 characters"]
+            ]
+        },
+        {
+            "type" : "Ground\\Core\\Fields\\Submit",
+            "id" : "submit",
+            "value" : "Submit"
+        }
+    ]
+}
